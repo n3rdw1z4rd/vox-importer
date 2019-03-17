@@ -94,7 +94,7 @@ func import(source_path, destination_path, options, platforms, gen_files):
 		if voxels.size() == 0: return voxels
 	file.close()
 
-	var diffVector = Vector3(sizeX / 2, -0.5, sizeY / 2)
+	var diffVector = Vector3(sizeX / 2 - 0.5, -0.5, sizeY / 2 - 0.5)
 	print('diffVector: ', diffVector)
 
 	var st = SurfaceTool.new()
